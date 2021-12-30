@@ -7,16 +7,35 @@ class signup extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.grey.shade100,
       body: SingleChildScrollView(
         child: Column(
           children: [
+            SizedBox(
+              height: 130,
+            ),
+            Container(width: 250, child: Image.asset('assets/katra.png')),
+            Container(
+              margin: EdgeInsets.only(left: 90, top: 7),
+              child: Text(
+                'Order Of Water',
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black,
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Column(
                   children: [
                     Container(
-                      margin: EdgeInsets.fromLTRB(30, 50, 0, 0),
+                      margin: EdgeInsets.fromLTRB(40, 50, 0, 0),
                       child: MaterialButton(
                         onPressed: () {
                           Navigator.push(
@@ -48,12 +67,12 @@ class signup extends StatelessWidget {
                 Column(
                   children: [
                     Container(
-                      margin: EdgeInsets.fromLTRB(20, 50, 0, 0),
+                      margin: EdgeInsets.fromLTRB(20, 50, 30, 0),
                       child: MaterialButton(
                         child: Text(
-                          'Sign UP',
+                          'Signup',
                           style: TextStyle(
-                            fontSize: 20,
+                            fontSize: 30,
                             fontWeight: FontWeight.bold,
                             // color: Colors.grey.shade500
                           ),
@@ -67,9 +86,9 @@ class signup extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      margin: EdgeInsets.fromLTRB(20, 0, 0, 0),
+                      margin: EdgeInsets.fromLTRB(20, 0, 30, 0),
                       height: 3,
-                      width: 75,
+                      width: 80,
                       decoration: BoxDecoration(color: Colors.blue),
                     ),
                   ],
@@ -153,9 +172,9 @@ class signup extends StatelessWidget {
                 child: Column(
                   // crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    // SizedBox(
-                    //   height: 20,
-                    // ),
+                    SizedBox(
+                      height: 20,
+                    ),
                     Container(
                       width: 260,
                       child: Text(

@@ -8,20 +8,39 @@ class signin extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.grey.shade100,
       body: SingleChildScrollView(
         child: Column(
           children: [
+            SizedBox(
+              height: 170,
+            ),
+            Container(width: 250, child: Image.asset('assets/katra.png')),
+            Container(
+              margin: EdgeInsets.only(left: 90, top: 7),
+              child: Text(
+                'Order Of Water',
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black,
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 50,
+            ),
             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Column(
                   children: [
                     Container(
-                      margin: EdgeInsets.fromLTRB(30, 50, 0, 0),
+                      margin: EdgeInsets.fromLTRB(50, 50, 0, 0),
                       child: Text(
                         'Login',
                         style: TextStyle(
-                          fontSize: 20,
+                          fontSize: 30,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -30,15 +49,15 @@ class signin extends StatelessWidget {
                       height: 4,
                     ),
                     Container(
-                      margin: EdgeInsets.fromLTRB(30, 0, 0, 0),
+                      margin: EdgeInsets.fromLTRB(50, 0, 0, 0),
                       height: 3,
-                      width: 55,
+                      width: 70,
                       decoration: BoxDecoration(color: Colors.blue),
                     ),
                   ],
                 ),
                 Container(
-                  margin: EdgeInsets.fromLTRB(20, 50, 0, 0),
+                  margin: EdgeInsets.fromLTRB(20, 50, 30, 0),
                   child: MaterialButton(
                     child: Text(
                       'Sign UP',
@@ -167,55 +186,55 @@ class signin extends StatelessWidget {
                 ],
               ),
             ),
-            Row(
-              children: [
-                SizedBox(
-                  height: 150,
-                  width: 30,
-                ),
-                Container(
-                  child: Text('or'),
-                ),
-                SizedBox(
-                  width: 5,
-                ),
-                Container(
-                  child: Text(
-                    'Join With',
-                    style: TextStyle(fontWeight: FontWeight.w800, fontSize: 15),
-                  ),
-                ),
-              ],
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [
-                ElevatedButton(
-                    child: Text('FACEBOOKS'),
-                    onPressed: () {},
-                    // style: ButtonStyle(color:Color.),
-                    style: ButtonStyle(
-                        backgroundColor:
-                            MaterialStateProperty.all<Color>(Colors.blue),
-                        shape:
-                            MaterialStateProperty.all<RoundedRectangleBorder>(
-                                RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(18.0),
-                                    side: BorderSide(color: Colors.blue))))),
-                ElevatedButton(
-                    child: Text('GOOGLE'),
-                    onPressed: () {},
-                    // style: ButtonStyle(color:Color.),
-                    style: ButtonStyle(
-                        backgroundColor:
-                            MaterialStateProperty.all<Color>(Colors.red),
-                        shape:
-                            MaterialStateProperty.all<RoundedRectangleBorder>(
-                                RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(18.0),
-                                    side: BorderSide(color: Colors.red))))),
-              ],
-            ),
+            // Row(
+            //   children: [
+            //     SizedBox(
+            //       height: 150,
+            //       width: 30,
+            //     ),
+            //     Container(
+            //       child: Text('or'),
+            //     ),
+            //     SizedBox(
+            //       width: 5,
+            //     ),
+            //     Container(
+            //       child: Text(
+            //         'Join With',
+            //         style: TextStyle(fontWeight: FontWeight.w800, fontSize: 15),
+            //       ),
+            //     ),
+            //   ],
+            // ),
+            // Row(
+            //   mainAxisAlignment: MainAxisAlignment.spaceAround,
+            //   children: [
+            //     ElevatedButton(
+            //         child: Text('FACEBOOKS'),
+            //         onPressed: () {},
+            //         // style: ButtonStyle(color:Color.),
+            //         style: ButtonStyle(
+            //             backgroundColor:
+            //                 MaterialStateProperty.all<Color>(Colors.blue),
+            //             shape:
+            //                 MaterialStateProperty.all<RoundedRectangleBorder>(
+            //                     RoundedRectangleBorder(
+            //                         borderRadius: BorderRadius.circular(18.0),
+            //                         side: BorderSide(color: Colors.blue))))),
+            //     ElevatedButton(
+            //         child: Text('GOOGLE'),
+            //         onPressed: () {},
+            //         // style: ButtonStyle(color:Color.),
+            //         style: ButtonStyle(
+            //             backgroundColor:
+            //                 MaterialStateProperty.all<Color>(Colors.red),
+            //             shape:
+            //                 MaterialStateProperty.all<RoundedRectangleBorder>(
+            //                     RoundedRectangleBorder(
+            //                         borderRadius: BorderRadius.circular(18.0),
+            //                         side: BorderSide(color: Colors.red))))),
+            //   ],
+            // ),
           ],
         ),
       ),
